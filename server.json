@@ -1,10 +1,10 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-07-09/server.schema.json",
-  "name": "io.github.wonderwhy-er/desktop-commander",
+  "name": "io.github.Neural-Nirvana.ntermcp",
   "description": "MCP server for terminal commands, file operations, and process management",
   "status": "active",
   "repository": {
-    "url": "https://github.com/wonderwhy-er/DesktopCommanderMCP",
+    "url": "https://github.com/Neural-Nirvana/NTERMCP",
     "source": "github"
   },
   "version": "0.2.15",
@@ -12,7 +12,7 @@
     {
       "registry_type": "npm",
       "registry_base_url": "https://registry.npmjs.org",
-      "identifier": "@wonderwhy-er/desktop-commander",
+      "identifier": "ntermcp",
       "version": "0.2.15",
       "transport": {
         "type": "stdio"

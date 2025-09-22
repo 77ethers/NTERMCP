@@ -1,12 +1,12 @@
 # Publishing Guide for Desktop Commander MCP
 
-This document outlines the complete process for publishing new versions of Desktop Commander to both NPM and the MCP Registry.
+This document outlines the complete process for publishing new versions of NTERMCP to both NPM and the MCP Registry.
 
 ## Prerequisites
 
 - Node.js 18+ installed
-- NPM account with publish permissions to `@wonderwhy-er/desktop-commander`
-- GitHub account with access to `wonderwhy-er/DesktopCommanderMCP`
+- NPM account with publish permissions to `ntermcp`
+- GitHub account with access to `Neural-Nirvana/NTERMCP`
 - `mcp-publisher` CLI tool installed: `brew install mcp-publisher`
 
 ## Publishing Process
@@ -70,7 +70,7 @@ git push origin vX.Y.Z
 npm publish
 
 # Verify publication
-npm view @wonderwhy-er/desktop-commander version
+npm view ntermcp version
 ```
 
 **Note**: Make sure you're logged into NPM with the correct account:
@@ -90,12 +90,12 @@ mcp-publisher login github
 mcp-publisher publish
 
 # Verify publication
-curl -s "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.wonderwhy-er/desktop-commander" | jq '.servers[0].version'
+curl -s "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Neural-Nirvana.ntermcp" | jq '.servers[0].version'
 ```
 
 ### 6. Create GitHub Release (Optional but Recommended)
 
-1. Go to https://github.com/wonderwhy-er/DesktopCommanderMCP/releases
+1. Go to https://github.com/Neural-Nirvana/NTERMCP/releases
 2. Click "Create a new release"
 3. Select the tag you just created (`vX.Y.Z`)
 4. Fill in release notes with:
@@ -133,8 +133,8 @@ npm publish
 mcp-publisher publish
 
 # 6. Verify both publications
-npm view @wonderwhy-er/desktop-commander version
-curl -s "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.wonderwhy-er/desktop-commander" | jq '.servers[0].version'
+npm view ntermcp version
+curl -s "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Neural-Nirvana.ntermcp" | jq '.servers[0].version'
 ```
 
 ## Troubleshooting
@@ -142,7 +142,7 @@ curl -s "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.wo
 ### NPM Publishing Issues
 
 - **Authentication Error**: Run `npm login` and verify with `npm whoami`
-- **Permission Error**: Ensure you have publish rights to the `@wonderwhy-er` scope
+- **Permission Error**: Ensure you have publish rights to the `ntermcp` package
 - **Version Already Exists**: You cannot republish the same version. Bump the version again.
 
 ### MCP Registry Issues
@@ -161,10 +161,10 @@ curl -s "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.wo
 
 ## Registry Information
 
-- **NPM Package**: https://www.npmjs.com/package/@wonderwhy-er/desktop-commander
+- **NPM Package**: https://www.npmjs.com/package/ntermcp
 - **MCP Registry**: https://registry.modelcontextprotocol.io/
 - **Server ID**: `490703ba-12b3-48d8-81ef-056010280a9a`
-- **GitHub Repository**: https://github.com/wonderwhy-er/DesktopCommanderMCP
+- **GitHub Repository**: https://github.com/Neural-Nirvana/NTERMCP
 
 ## Version Sync Script Details
 

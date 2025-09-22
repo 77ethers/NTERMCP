@@ -2,7 +2,7 @@
 
 ## Current Security Approach
 
-Desktop Commander is designed for human users working with AI assistants like Claude. The security restrictions built into the tool are primarily **guardrails to help the AI model** avoid actions the user didn't intend, rather than hardened security boundaries.
+NTERMCP is designed for human users working with AI assistants like Claude. The security restrictions built into the tool are primarily **guardrails to help the AI model** avoid actions the user didn't intend, rather than hardened security boundaries.
 
 **Security is not currently our top priority** - we haven't heard significant demand from users for stronger security controls. We take **user needs seriously**, so if you need better security controls for your specific use case, please contact the team to discuss your requirements.
 
@@ -32,7 +32,7 @@ As a startup focused on user needs rather than theoretical security concerns, we
 
 ## Contact
 
-- **GitHub Issues**: https://github.com/wonderwhy-er/DesktopCommanderMCP/issues
+- **GitHub Issues**: https://github.com/Neural-Nirvana/NTERMCP/issues
 - **Discord Community**: https://discord.gg/kQ27sNnZr7
 
 ---

@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function() {
       }
       
     } else if (attempts >= MAX_ATTEMPTS) {
-      console.error('Desktop Commander: Failed to load all sponsorship components within timeout period');
+      console.error('NTERMCP: Failed to load all sponsorship components within timeout period');
     } else {
       // Not all components are loaded yet, check again in a moment
       attempts++;

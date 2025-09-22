@@ -1,20 +1,20 @@
 {
-  "name": "@wonderwhy-er/desktop-commander",
+  "name": "ntermcp",
   "version": "0.2.15",
-  "description": "MCP server for terminal operations and file editing",
-  "mcpName": "io.github.wonderwhy-er/desktop-commander",
+  "description": "MCP server for terminal operations and file editing (NTERMCP)",
+  "mcpName": "io.github.Neural-Nirvana.ntermcp",
   "license": "MIT",
-  "author": "Eduards Ruzga",
-  "homepage": "https://github.com/wonderwhy-er/DesktopCommanderMCP",
-  "bugs": "https://github.com/wonderwhy-er/DesktopCommanderMCP/issues",
+  "author": "Neural-Nirvana",
+  "homepage": "https://github.com/Neural-Nirvana/NTERMCP",
+  "bugs": "https://github.com/Neural-Nirvana/NTERMCP/issues",
   "type": "module",
   "engines": {
     "node": ">=18.0.0"
   },
   "bin": {
-    "desktop-commander": "dist/index.js",
-    "setup": "dist/setup-claude-server.js",
-    "remove": "dist/uninstall-claude-server.js"
+    "ntermcp": "dist/index.js",
+    "ntermcp-setup": "dist/setup-claude-server.js",
+    "ntermcp-remove": "dist/uninstall-claude-server.js"
   },
   "files": [
     "dist",

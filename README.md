@@ -1,22 +1,22 @@
-# Desktop Commander MCP
-### Search, update, manage files and run terminal commands with AI
+# NTERMCP
+### MCP server for terminal operations and file editing
 
-[![npm downloads](https://img.shields.io/npm/dw/@wonderwhy-er/desktop-commander)](https://www.npmjs.com/package/@wonderwhy-er/desktop-commander)
-[![Trust Score](https://archestra.ai/mcp-catalog/api/badge/quality/wonderwhy-er/DesktopCommanderMCP)](https://archestra.ai/mcp-catalog/wonderwhy-er__desktopcommandermcp)
-[![smithery badge](https://smithery.ai/badge/@wonderwhy-er/desktop-commander)](https://smithery.ai/server/@wonderwhy-er/desktop-commander)
+[![npm downloads](https://img.shields.io/npm/dw/ntermcp)](https://www.npmjs.com/package/ntermcp)
+[![Trust Score](https://archestra.ai/mcp-catalog/api/badge/quality/Neural-Nirvana/NTERMCP)](https://archestra.ai/mcp-catalog/Neural-Nirvana__ntermcp)
+[![smithery badge](https://smithery.ai/badge/ntermcp)](https://smithery.ai/server/ntermcp)
 [![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-support-yellow.svg)](https://www.buymeacoffee.com/wonderwhyer)
 
 
 [![Discord](https://img.shields.io/badge/Join%20Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/kQ27sNnZr7)
 
 
-Work with code and text, run processes, and automate tasks, going far beyond other AI editors - without API token costs.
+Work with code and text, run processes, and automate tasks with NTERMCP - without API token costs.
 
 
-![Desktop Commander MCP](https://raw.githubusercontent.com/wonderwhy-er/ClaudeComputerCommander/main/docs/vertical_video_mobile.mp4)
+![NTERMCP](https://raw.githubusercontent.com/Neural-Nirvana/NTERMCP/main/docs/vertical_video_mobile.mp4)
 
 <a href="https://glama.ai/mcp/servers/zempur9oh4">
-  <img width="380" height="200" src="https://glama.ai/mcp/servers/zempur9oh4/badge" alt="Desktop Commander MCP" />
+  <img width="380" height="200" src="https://glama.ai/mcp/servers/zempur9oh4/badge" alt="NTERMCP" />
 </a>
 
 ## Table of Contents
@@ -26,7 +26,7 @@ Work with code and text, run processes, and automate tasks, going far beyond oth
 - [Usage](#usage)
 - [Handling Long-Running Commands](#handling-long-running-commands)
 - [Work in Progress and TODOs](#roadmap)
-- [Sponsors and Supporters](#support-desktop-commander)
+- [Sponsors and Supporters](#support-ntermcp)
 - [Website](#website)
 - [Media](#media)
 - [Testimonials](#testimonials)
@@ -35,7 +35,7 @@ Work with code and text, run processes, and automate tasks, going far beyond oth
 - [License](#license)
 
 All of your AI development tools in one place.
-Desktop Commander puts all dev tools in one chat.
+NTERMCP puts all dev tools in one chat.
 Execute long-running terminal commands on your computer and manage processes through Model Context Protocol (MCP). Built on top of [MCP Filesystem Server](https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem) to provide additional search and replace file editing capabilities.
 
 ## Features
@@ -79,12 +79,12 @@ Desktop Commander offers multiple installation methods to fit different user nee
 ### Option 1: Install through npx ⭐ **Auto-Updates** **Requires Node.js**
 Just run this in terminal:
 ```
-npx @wonderwhy-er/desktop-commander@latest setup
+npx ntermcp@latest ntermcp-setup
 ```
 
 For debugging mode (allows Node.js inspector connection):
 ```
-npx @wonderwhy-er/desktop-commander@latest setup --debug
+npx ntermcp@latest ntermcp-setup --debug
 ```
 
 **Command line options during setup:**
@@ -98,21 +98,21 @@ Restart Claude if running.
 **🗑️ Uninstall:** Run `npx @wonderwhy-er/desktop-commander@latest remove`
 
 ### Option 2: Using bash script installer (macOS) ⭐ **Auto-Updates** **Installs Node.js if needed**
-For macOS users, you can use our automated bash installer which will check your Node.js version, install it if needed, and automatically configure Desktop Commander:
+For macOS users, you can use our automated bash installer which will check your Node.js version, install it if needed, and automatically configure NTERMCP:
 ```
-curl -fsSL https://raw.githubusercontent.com/wonderwhy-er/DesktopCommanderMCP/refs/heads/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/Neural-Nirvana/NTERMCP/refs/heads/main/install.sh | bash
 ```
 This script handles all dependencies and configuration automatically for a seamless setup experience.
 
 **✅ Auto-Updates:** Yes - requires manual updates  
 **🔄 Manual Update:** Re-run the bash installer command above  
-**🗑️ Uninstall:** Run `npx @wonderwhy-er/desktop-commander@latest remove`
+**🗑️ Uninstall:** Run `npx ntermcp@latest ntermcp-remove`
 
 ### Option 3: Installing via Smithery ⭐ **Auto-Updates** **Requires Node.js**
 
-To install Desktop Commander for Claude Desktop via [Smithery](https://smithery.ai/server/@wonderwhy-er/desktop-commander):
+To install NTERMCP for Claude Desktop via [Smithery](https://smithery.ai/server/ntermcp):
 
-1. **Visit the Smithery page:** https://smithery.ai/server/@wonderwhy-er/desktop-commander
+1. **Visit the Smithery page:** https://smithery.ai/server/ntermcp
 2. **Login to Smithery** if you haven't already
 3. **Select your client** (Claude Desktop) on the right side
 4. **Install with the provided key** that appears after selecting your client
@@ -133,11 +133,11 @@ Add this entry to your claude_desktop_config.json:
 ```json
 {
   "mcpServers": {
-    "desktop-commander": {
+    "ntermcp": {
       "command": "npx",
       "args": [
         "-y",
-        "@wonderwhy-er/desktop-commander@latest"
+        "ntermcp@latest"
       ]
     }
   }
@@ -147,12 +147,12 @@ Restart Claude if running.
 
 **✅ Auto-Updates:** Yes - automatically updates when you restart Claude  
 **🔄 Manual Update:** Run the setup command again  
-**🗑️ Uninstall:** Run `npx @wonderwhy-er/desktop-commander@latest remove` or  remove the "desktop-commander" entry from your claude_desktop_config.json file
+**🗑️ Uninstall:** Run `npx ntermcp@latest ntermcp-remove` or  remove the "ntermcp" entry from your claude_desktop_config.json file
 
 ### ### Option 5: Checkout locally ❌ **Manual Updates** **Requires Node.js** ❌ **Manual Updates** **Requires Node.js**
 1. Clone and build:
 ```bash
-git clone https://github.com/wonderwhy-er/DesktopCommanderMCP.git
+git clone https://github.com/Neural-Nirvana/NTERMCP.git
 cd DesktopCommanderMCP
 npm run setup
 ```
@@ -165,12 +165,12 @@ The setup command will:
 - Add MCP servers to Claude's config if needed
 
 **❌ Auto-Updates:** No - requires manual git updates  
-**🔄 Manual Update:** `cd DesktopCommanderMCP && git pull && npm run setup`  
-**🗑️ Uninstall:** Run `npx @wonderwhy-er/desktop-commander@latest remove` or remove the cloned directory and remove MCP server entry from Claude config
+**🔄 Manual Update:** `cd NTERMCP && git pull && npm run setup`  
+**🗑️ Uninstall:** Run `npx ntermcp@latest ntermcp-remove` or remove the cloned directory and remove MCP server entry from Claude config
 
 ### Option 6: Docker Installation 🐳 ⭐ **Auto-Updates** **No Node.js Required**
 
-Perfect for users who want complete or partial isolation or don't have Node.js installed. Desktop Commander runs in a sandboxed Docker container with a persistent work environment.
+Perfect for users who want complete or partial isolation or don't have Node.js installed. NTERMCP runs in a sandboxed Docker container with a persistent work environment.
 
 #### Prerequisites
 - [Docker Desktop](https://www.docker.com/products/docker-desktop/) installed **and running**
@@ -182,13 +182,13 @@ Perfect for users who want complete or partial isolation or don't have Node.js i
 
 **macOS/Linux:**
 ```bash
-bash <(curl -fsSL https://raw.githubusercontent.com/wonderwhy-er/DesktopCommanderMCP/refs/heads/main/install-docker.sh)
+bash <(curl -fsSL https://raw.githubusercontent.com/Neural-Nirvana/NTERMCP/refs/heads/main/install-docker.sh)
 ```
 
 **Windows PowerShell:**
 ```powershell
 # Download and run the installer (one-liner)
-iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/wonderwhy-er/DesktopCommanderMCP/refs/heads/main/install-docker.ps1'))
+iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/Neural-Nirvana/NTERMCP/refs/heads/main/install-docker.ps1'))
 ```
 
 The automated installer will:
@@ -215,13 +215,13 @@ If you prefer manual setup, add this to your claude_desktop_config.json:
 ```json
 {
   "mcpServers": {
-    "desktop-commander-in-docker": {
+    "ntermcp-in-docker": {
       "command": "docker",
       "args": [
         "run",
         "-i",
         "--rm",
-        "mcp/desktop-commander:latest"
+        "Neural-Nirvana/ntermcp:latest"
       ]
     }
   }
@@ -232,7 +232,7 @@ If you prefer manual setup, add this to your claude_desktop_config.json:
 ```json
 {
   "mcpServers": {
-    "desktop-commander-in-docker": {
+    "ntermcp-in-docker": {
       "command": "docker",
       "args": [
         "run",
@@ -240,7 +240,7 @@ If you prefer manual setup, add this to your claude_desktop_config.json:
         "--rm",
         "-v", "/Users/username/Desktop:/mnt/desktop",
         "-v", "/Users/username/Documents:/mnt/documents",
-        "mcp/desktop-commander:latest"
+        "Neural-Nirvana/ntermcp:latest"
       ]
     }
   }
@@ -251,7 +251,7 @@ If you prefer manual setup, add this to your claude_desktop_config.json:
 ```json
 {
   "mcpServers": {
-    "desktop-commander-in-docker": {
+    "ntermcp-in-docker": {
       "command": "docker",
       "args": [
         "run", "-i", "--rm",
@@ -261,7 +261,7 @@ If you prefer manual setup, add this to your claude_desktop_config.json:
         "-v", "dc-packages:/var",
         "-v", "/Users/username/Projects:/mnt/Projects",
         "-v", "/Users/username/Downloads:/mnt/Downloads",
-        "mcp/desktop-commander:latest"
+        "Neural-Nirvana/ntermcp:latest"
       ]
     }
   }
@@ -275,7 +275,7 @@ If you prefer manual setup, add this to your claude_desktop_config.json:
 ✅ **Persistent Environment:** Your tools, files, configs, and work survives restarts
 
 **✅ Auto-Updates:** Yes - `latest` tag automatically gets newer versions  
-**🔄 Manual Update:** `docker pull mcp/desktop-commander:latest` then restart Claude  
+**🔄 Manual Update:** `docker pull Neural-Nirvana/ntermcp:latest` then restart Claude  
 
 #### Docker Management Commands
 
@@ -283,45 +283,45 @@ If you prefer manual setup, add this to your claude_desktop_config.json:
 
 Check installation status:
 ```bash
-bash <(curl -fsSL https://raw.githubusercontent.com/wonderwhy-er/DesktopCommanderMCP/refs/heads/main/install-docker.sh) --status
+bash <(curl -fsSL https://raw.githubusercontent.com/Neural-Nirvana/NTERMCP/refs/heads/main/install-docker.sh) --status
 ```
 
 Reset all persistent data (removes all installed tools and configs):
 ```bash
-bash <(curl -fsSL https://raw.githubusercontent.com/wonderwhy-er/DesktopCommanderMCP/refs/heads/main/install-docker.sh) --reset
+bash <(curl -fsSL https://raw.githubusercontent.com/Neural-Nirvana/NTERMCP/refs/heads/main/install-docker.sh) --reset
 ```
 
 **Windows PowerShell:**
 
 Check status:
 ```powershell
-$script = (New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/wonderwhy-er/DesktopCommanderMCP/refs/heads/main/install-docker.ps1'); & ([ScriptBlock]::Create("$script")) -Status
+$script = (New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/Neural-Nirvana/NTERMCP/refs/heads/main/install-docker.ps1'); & ([ScriptBlock]::Create("$script")) -Status
 ```
 
 Reset all data:
 ```powershell
-$script = (New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/wonderwhy-er/DesktopCommanderMCP/refs/heads/main/install-docker.ps1'); & ([ScriptBlock]::Create("$script")) -Reset
+$script = (New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/Neural-Nirvana/NTERMCP/refs/heads/main/install-docker.ps1'); & ([ScriptBlock]::Create("$script")) -Reset
 ```
 
 Show help:
 ```powershell
-$script = (New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/wonderwhy-er/DesktopCommanderMCP/refs/heads/main/install-docker.ps1'); & ([ScriptBlock]::Create("$script")) -Help
+$script = (New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/Neural-Nirvana/NTERMCP/refs/heads/main/install-docker.ps1'); & ([ScriptBlock]::Create("$script")) -Help
 ```
 
 Verbose output:
 ```powershell
-$script = (New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/wonderwhy-er/DesktopCommanderMCP/refs/heads/main/install-docker.ps1'); & ([ScriptBlock]::Create("$script")) -VerboseOutput
+$script = (New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/Neural-Nirvana/NTERMCP/refs/heads/main/install-docker.ps1'); & ([ScriptBlock]::Create("$script")) -VerboseOutput
 ```  
 
 #### Troubleshooting Docker Installation
 If you broke the Docker container or need a fresh start:
 ```bash
 # Reset and reinstall from scratch
-bash <(curl -fsSL https://raw.githubusercontent.com/wonderwhy-er/DesktopCommanderMCP/refs/heads/main/install-docker.sh) --reset && bash <(curl -fsSL https://raw.githubusercontent.com/wonderwhy-er/DesktopCommanderMCP/refs/heads/main/install-docker.sh)
+bash <(curl -fsSL https://raw.githubusercontent.com/Neural-Nirvana/NTERMCP/refs/heads/main/install-docker.sh) --reset && bash <(curl -fsSL https://raw.githubusercontent.com/Neural-Nirvana/NTERMCP/refs/heads/main/install-docker.sh)
 ```
 This will completely reset your persistent environment and reinstall everything fresh with exception of not touching mounted folders
 
-## Updating & Uninstalling Desktop Commander
+## Updating & Uninstalling NTERMCP
 
 ### Automatic Updates (Options 1, 2, 3, 4 & 6)
 **Options 1 (npx), Option 2 (bash installer), 3 (Smithery), 4 (manual config), and 6 (Docker)** automatically update to the latest version whenever you restart Claude. No manual intervention needed.
@@ -329,17 +329,17 @@ This will completely reset your persistent environment and reinstall everything 
 ### Manual Updates (Option 5)
 - **Option 5 (local checkout):** `cd DesktopCommanderMCP && git pull && npm run setup`
 
-### Uninstalling Desktop Commander
+### Uninstalling NTERMCP
 #### 🤖 Automatic Uninstallation (Recommended)
 
-The easiest way to completely remove Desktop Commander:
+The easiest way to completely remove NTERMCP:
 
 ```bash
-npx @wonderwhy-er/desktop-commander@latest remove
+npx ntermcp@latest ntermcp-remove
 ```
 
 This automatic uninstaller will:
-- ✅ Remove Desktop Commander from Claude's MCP server configuration
+- ✅ Remove NTERMCP from Claude's MCP server configuration
 - ✅ Create a backup of your Claude config before making changes
 - ✅ Provide guidance for complete package removal
 - ✅ Restore from backup if anything goes wrong
@@ -357,15 +357,15 @@ If the automatic uninstaller doesn't work or you prefer manual removal:
 
 2. **Edit the config file:**
   - Open the file in a text editor
-  - Find and remove the `"desktop-commander"` entry from the `"mcpServers"` section
+  - Find and remove the `"ntermcp"` entry from the `"mcpServers"` section
   - Save the file
 
   **Example - Remove this section:**
   ```json
   {
-      "desktop-commander": {
+      "ntermcp": {
         "command": "npx",
-        "args": ["@wonderwhy-er/desktop-commander@latest"]
+        "args": ["ntermcp@latest"]
       }
   }
   ```
@@ -386,18 +386,18 @@ Close and restart Claude Desktop to complete the removal.
 
 ## Getting Started
 
-Once Desktop Commander is installed and Claude Desktop is restarted, you're ready to supercharge your Claude experience!
+Once NTERMCP is installed and Claude Desktop is restarted, you're ready to supercharge your Claude experience!
 
 ### 🚀 New User Onboarding
 
-Desktop Commander includes intelligent onboarding to help you discover what's possible:
+NTERMCP includes intelligent onboarding to help you discover what's possible:
 
-**For New Users:** When you're just getting started (fewer than 10 successful commands), Claude will automatically offer helpful getting-started guidance and practical tutorials after you use Desktop Commander successfully.
+**For New Users:** When you're just getting started (fewer than 10 successful commands), Claude will automatically offer helpful getting-started guidance and practical tutorials after you use NTERMCP successfully.
 
 **Request Help Anytime:** You can ask for onboarding assistance at any time by simply saying:
-- *"Help me get started with Desktop Commander"*
-- *"Show me Desktop Commander examples"* 
-- *"What can I do with Desktop Commander?"*
+- *"Help me get started with NTERMCP"*
+- *"Show me NTERMCP examples"*
+- *"What can I do with NTERMCP?"*
 
 Claude will then show you beginner-friendly tutorials and examples, including:
 - 📁 Organizing your Downloads folder automatically
@@ -493,15 +493,15 @@ When a search fails, you'll see detailed information about the closest match fou
 
 ### 🐳 Isolated Environment Usage
 
-Desktop Commander can be run in Docker containers for **complete isolation from your host system**, providing **zero risk to your computer**. This is perfect for testing, development, or when you want complete sandboxing.
+NTERMCP can be run in Docker containers for **complete isolation from your host system**, providing **zero risk to your computer**. This is perfect for testing, development, or when you want complete sandboxing.
 
 ### Installation Instructions
 
 1. **Install Docker for Windows/Mac**
    - Download and install Docker Desktop from [docker.com](https://www.docker.com/products/docker-desktop/)
 
-2. **Get Desktop Commander Docker Configuration**
-   - Visit: https://hub.docker.com/mcp/server/desktop-commander/manual
+2. **Get NTERMCP Docker Configuration**
+    - Visit: https://hub.docker.com/r/Neural-Nirvana/ntermcp
    - **Option A:** Use the provided terminal command for automated setup
    - **Option B:** Click "Standalone" to get the config JSON and add it manually to your Claude Desktop config
  ![docker-config.png](screenshots/docker-config.png)
@@ -574,7 +574,7 @@ The fuzzy search logs help you understand:
 
 ## Audit Logging
 
-Desktop Commander now includes comprehensive logging for all tool calls:
+NTERMCP now includes comprehensive logging for all tool calls:
 
 ### What Gets Logged
 - Every tool call is logged with timestamp, tool name, and arguments (sanitized for privacy)
@@ -659,11 +659,11 @@ set_config_value({ "key": "fileWriteLineLimit", "value": 25 })
 
 ## Command Line Options
 
-Desktop Commander supports several command line options for customizing behavior:
+NTERMCP supports several command line options for customizing behavior:
 
 ### Disable Onboarding
 
-By default, Desktop Commander shows helpful onboarding prompts to new users (those with fewer than 10 tool calls). You can disable this behavior:
+By default, NTERMCP shows helpful onboarding prompts to new users (those with fewer than 10 tool calls). You can disable this behavior:
 
 ```bash
 # Disable onboarding for this session
@@ -675,11 +675,11 @@ npm run start:no-onboarding
 # For npx installations, modify your claude_desktop_config.json:
 {
   "mcpServers": {
-    "desktop-commander": {
+    "ntermcp": {
       "command": "npx",
       "args": [
         "-y",
-        "@wonderwhy-er/desktop-commander@latest",
+        "ntermcp@latest",
         "--no-onboarding"
       ]
     }
@@ -723,14 +723,14 @@ If you need to debug the server, you can install it in debug mode:
 
 ```bash
 # Using npx
-npx @wonderwhy-er/desktop-commander@latest setup --debug
+npx ntermcp@latest ntermcp-setup --debug
 
 # Or if installed locally
 npm run setup:debug
 ```
 
 This will:
-1. Configure Claude to use a separate "desktop-commander" server
+1. Configure Claude to use a separate "ntermcp" server
 2. Enable Node.js inspector protocol with `--inspect-brk=9229` flag
 3. Pause execution at the start until a debugger connects
 4. Enable additional debugging environment variables
@@ -744,7 +744,7 @@ Important debugging notes:
 - The server will pause on startup until a debugger connects (due to the `--inspect-brk` flag)
 - If you don't see activity during debugging, ensure you're connected to the correct Node.js process
 - Multiple Node processes may be running; connect to the one on port 9229
-- The debug server is identified as "desktop-commander-debug" in Claude's MCP server list
+- The debug server is identified as "ntermcp-debug" in Claude's MCP server list
 
 Troubleshooting:
 - If Claude times out while trying to use the debug server, your debugger might not be properly connected
@@ -789,20 +789,20 @@ The following features are currently being explored:
 - **Interactive shell support** - ssh, node/python repl
 - **Improve large file reading and writing**
 
-## Support Desktop Commander
+## Support NTERMCP
 
 <div align="center">
   <h3>📢 SUPPORT THIS PROJECT</h3>
-  <p><strong>Desktop Commander MCP is free and open source, but needs your support to thrive!</strong></p>
+  <p><strong>NTERMCP is free and open source, but needs your support to thrive!</strong></p>
   
   <div style="background-color: #f8f9fa; padding: 15px; border-radius: 10px; margin: 20px 0; border: 2px solid #007bff;">
-    <p>Our philosophy is simple: we don't want you to pay for it if you're not successful. But if Desktop Commander contributes to your success, please consider contributing to ours.</p>
+    <p>Our philosophy is simple: we don't want you to pay for it if you're not successful. But if NTERMCP contributes to your success, please consider contributing to ours.</p>
     <p><strong>Ways to support:</strong></p>
     <ul style="list-style-type: none; padding: 0;">
       <li>🌟 <a href="https://github.com/sponsors/wonderwhy-er"><strong>GitHub Sponsors</strong></a> - Recurring support</li>
       <li>☕ <a href="https://www.buymeacoffee.com/wonderwhyer"><strong>Buy Me A Coffee</strong></a> - One-time contributions</li>
       <li>💖 <a href="https://www.patreon.com/c/EduardsRuzga"><strong>Patreon</strong></a> - Become a patron and support us monthly</li>
-      <li>⭐ <a href="https://github.com/wonderwhy-er/DesktopCommanderMCP"><strong>Star on GitHub</strong></a> - Help others discover the project</li>
+      <li>⭐ <a href="https://github.com/Neural-Nirvana/NTERMCP"><strong>Star on GitHub</strong></a> - Help others discover the project</li>
     </ul>
   </div>
 </div>
@@ -857,7 +857,7 @@ Learn more about this project through these resources:
 [Claude with MCPs replaced Cursor & Windsurf. How did that happen?](https://wonderwhy-er.medium.com/claude-with-mcps-replaced-cursor-windsurf-how-did-that-happen-c1d1e2795e96) - A detailed exploration of how Claude with Model Context Protocol capabilities is changing developer workflows.
 
 ### Video
-[Claude Desktop Commander Video Tutorial](https://www.youtube.com/watch?v=ly3bed99Dy8) - Watch how to set up and use the Commander effectively.
+[NTERMCP Video Tutorial](https://www.youtube.com/watch?v=ly3bed99Dy8) - Watch how to set up and use NTERMCP effectively.
 
 ### Publication at AnalyticsIndiaMag
 [![analyticsindiamag.png](testemonials%2Fanalyticsindiamag.png)
@@ -906,17 +906,17 @@ If you find this tool valuable for your workflow, please consider [supporting th
 
 Here are answers to some common questions. For a more comprehensive FAQ, see our [detailed FAQ document](FAQ.md).
 
-### What is Desktop Commander?
+### What is NTERMCP?
 It's an MCP tool that enables Claude Desktop to access your file system and terminal, turning Claude into a versatile assistant for coding, automation, codebase exploration, and more.
 
 ### How is this different from Cursor/Windsurf?
-Unlike IDE-focused tools, Claude Desktop Commander provides a solution-centric approach that works with your entire OS, not just within a coding environment. Claude reads files in full rather than chunking them, can work across multiple projects simultaneously, and executes changes in one go rather than requiring constant review.
+Unlike IDE-focused tools, NTERMCP provides a solution-centric approach that works with your entire OS, not just within a coding environment. Claude reads files in full rather than chunking them, can work across multiple projects simultaneously, and executes changes in one go rather than requiring constant review.
 
 ### Do I need to pay for API credits?
 No. This tool works with Claude Desktop's standard Pro subscription ($20/month), not with API calls, so you won't incur additional costs beyond the subscription fee.
 
-### Does Desktop Commander automatically update?
-Yes, when installed through npx or Smithery, Desktop Commander automatically updates to the latest version when you restart Claude. No manual update process is needed.
+### Does NTERMCP automatically update?
+Yes, when installed through npx or Smithery, NTERMCP automatically updates to the latest version when you restart Claude. No manual update process is needed.
 
 ### What are the most common use cases?
 - Exploring and understanding complex codebases
@@ -926,10 +926,10 @@ Yes, when installed through npx or Smithery, Desktop Commander automatically upd
 - Making surgical code changes with precise control
 
 ### I'm having trouble installing or using the tool. Where can I get help?
-Join our [Discord server](https://discord.gg/kQ27sNnZr7) for community support, check the [GitHub issues](https://github.com/wonderwhy-er/DesktopCommanderMCP/issues) for known problems, or review the [full FAQ](FAQ.md) for troubleshooting tips. You can also visit our [website FAQ section](https://desktopcommander.app#faq) for a more user-friendly experience. If you encounter a new issue, please consider [opening a GitHub issue](https://github.com/wonderwhy-er/DesktopCommanderMCP/issues/new) with details about your problem.
+Join our [Discord server](https://discord.gg/kQ27sNnZr7) for community support, check the [GitHub issues](https://github.com/Neural-Nirvana/NTERMCP/issues) for known problems, or review the [full FAQ](FAQ.md) for troubleshooting tips. You can also visit our [website FAQ section](https://desktopcommander.app#faq) for a more user-friendly experience. If you encounter a new issue, please consider [opening a GitHub issue](https://github.com/Neural-Nirvana/NTERMCP/issues/new) with details about your problem.
 
 ### How do I report security vulnerabilities?
-Please create a [GitHub Issue](https://github.com/wonderwhy-er/DesktopCommanderMCP/issues) with detailed information about any security vulnerabilities you discover. See our [Security Policy](SECURITY.md) for complete guidelines on responsible disclosure.
+Please create a [GitHub Issue](https://github.com/Neural-Nirvana/NTERMCP/issues) with detailed information about any security vulnerabilities you discover. See our [Security Policy](SECURITY.md) for complete guidelines on responsible disclosure.
 
 ## Data Collection & Privacy
 
@@ -941,7 +941,7 @@ Desktop Commander collects limited anonymous telemetry data to help improve the 
 - **This data is NOT sent anywhere** - it remains on your computer for your personal insights
 
 ### Feedback System
-- Use the `give_feedback_to_desktop_commander` tool to provide feedback about Desktop Commander
+- Use the `give_feedback_to_ntermcp` tool to provide feedback about NTERMCP
 - Opens a browser-based feedback form to send suggestions and feedback to the development team
 - Only basic usage statistics (tool call count, days using, platform) are pre-filled to provide context but you can remove them
 

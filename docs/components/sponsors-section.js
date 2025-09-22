@@ -11,7 +11,7 @@ class SponsorsSection extends HTMLElement {
         <div class="container">
           <div class="section-title">
             <h2>Our Sponsors</h2>
-            <p>Desktop Commander MCP is free and open source, but it requires time to improve it. Our philosophy is that we do not want you to pay for it if you are not successful. But if you are successful and Desktop Commander contributes to your success, consider contributing to ours.</p>
+            <p>NTERMCP is free and open source, but it requires time to improve it. Our philosophy is that we do not want you to pay for it if you are not successful. But if you are successful and NTERMCP contributes to your success, consider contributing to ours.</p>
           </div>
           
           <div class="sponsors-grid">

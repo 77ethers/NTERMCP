@@ -1,5 +1,5 @@
 /**
- * Desktop Commander Analytics Tracking
+ * NTERMCP Analytics Tracking
  * Comprehensive event tracking for user interactions
  * Dual-tracking to Google Analytics and PostHog
  */
@@ -187,7 +187,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Record page load time for engagement tracking
     window.pageLoadTime = Date.now();
     
-    console.log('🎯 Desktop Commander Analytics Tracking initialized');
+    console.log('🎯 NTERMCP Analytics Tracking initialized');
     
     // Track initial page view with enhanced PostHog data
     if (typeof posthog !== 'undefined') {

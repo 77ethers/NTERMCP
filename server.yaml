@@ -1,19 +1,19 @@
-name: desktop-commander
-image: mcp/desktop-commander
+name: ntermcp
+image: Neural-Nirvana/ntermcp
 type: server
 meta:
   category: devops
   tags:
-    - desktop-commander
+    - ntermcp
     - devops
     - filesystem
     - terminal
 about:
-  title: Desktop Commander
-  description: Search, update, manage files and run terminal commands with AI. Configurable filesystem access and network permissions.
+  title: NTERMCP
+  description: MCP server for terminal operations and file editing. Configurable filesystem access and network permissions.
   icon: https://avatars.githubusercontent.com/u/182288589?s=200&v=4
 source:
-  project: https://github.com/wonderwhy-er/DesktopCommanderMCP
+  project: https://github.com/Neural-Nirvana/NTERMCP
   branch: main
   dockerfile: Dockerfile
 run:
